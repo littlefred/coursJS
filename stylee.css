@@ -1,0 +1,6 @@
+@charset "UTF-8";
+#displayPage{
+	width : 90%;
+	margin: auto;
+	border : outset 5px grey;
+}

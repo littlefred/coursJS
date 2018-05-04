@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>COURS JS</title>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+	<h1>EXERCISE JS</h1>
+	<div id="contenu">
+		<h3>First level</h3>
+		<p class="level1">there are three different exercises in this
+			level :</p>
+		<h3>Second level</h3>
+		<p class="level2">this level consists to manage a form and its
+			insertions in a table :</p>
+		<fieldset>
+			Add a food :
+			<form action="#" method="GET" id="form" onSubmit="return test()">
+				<label for="name">food name </label><input type="text" name="name" id="name" />
+				<label for="category">food category </label><input type="text" name="category" id="category" />
+				<label for="energy">food energy (Kcal) </label><input type="text" name="energy" id="energy" /><br />
+				<button type="submit" id="save">SAVE</button>
+			</form>
+		</fieldset>
+		
+		<table id="myTable">
+			<thead>
+				<tr>
+					<th>FOOD NAME</th>
+					<th>FOOD CATEGORY</th>
+					<th>FOOD ENERGY</th>
+				</tr>
+			</thead>
+			<tbody id="foodBody"></tbody>
+		</table>
+		<h3>Third level</h3>
+		<p class="level3">
+			this level is to display the contents of other pages in a predefined
+			area of the main page :<br />
+			- lien vers <a href="#" id="page1" class="linkpage" onclick="display('page1.html')">la page 1</a><br/>
+			- lien vers <a href="#" id="page2" class="linkpage" onclick="display('page2.html')">la page 2</a>
+		</p>
+		<section id="displayPage">Here, we can see the body of the different page.</section>
+	</div>
+	<script src="script2.js"></script>
+</body>
+</html>
